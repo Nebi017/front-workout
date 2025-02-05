@@ -41,7 +41,7 @@ const AddWorkout = () => {
     const token = localStorage.getItem("token");
 
     axios
-      .post("http://localhost:5555/workouts", data, {
+      .post("https://back-workout-2.onrender.com/workouts", data, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
